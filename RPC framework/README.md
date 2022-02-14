@@ -1,5 +1,7 @@
 # 徒手实现RPC框架
 
+分为2个工程，simplerpc是rpc框架的springboot starter实现，单独抽出来的工程，只包含rpc框架核心实现。simplerpctest是用来集成simplerpc进行测试的工程，展示了如何集成和使用RPC框架。
+
 RPC框架理论基础-5个核心模块：   
 ![RPC框架理论基础-5个核心模块](https://github.com/xiajunhust/tinywheel/blob/main/RPC%20framework/RPC%E6%A1%86%E6%9E%B6%E7%90%86%E8%AE%BA%E5%9F%BA%E7%A1%80-5%E4%B8%AA%E6%A0%B8%E5%BF%83%E6%A8%A1%E5%9D%97.png)
 
