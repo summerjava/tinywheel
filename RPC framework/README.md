@@ -34,7 +34,7 @@ RPC调用序列图
 
 致力于分享干货，为每一位计算机CS学子学习道路上带来帮助。
 
-也欢迎大家关注我的公众号~
+也欢迎大家关注我的公众号，获取更多计算机干货~
 
 ![欢迎大家关注我的公众号](https://github.com/xiajunhust/awosome-cs/blob/main/QR-CODE.jpg)
 
