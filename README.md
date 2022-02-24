@@ -8,9 +8,10 @@
 项目明细：  
 1. 利用原生Java nio实现cs通信程序
 2. 基于Netty实现RPC框架
-3. 基于Netty实现http server
-4. 基于netty websocket实现聊天工具
-5. 实现Spring IOC容器
+3. 分布式消息队列设计与实现
+4. 基于Netty实现http server
+5. 基于netty websocket实现聊天工具
+6. 实现Spring IOC容器
 
 ---
 
