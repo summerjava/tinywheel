@@ -14,6 +14,11 @@ Spring IOC功能示例：
 运行日志：   
 ![运行日志](https://github.com/xiajunhust/tinywheel/blob/main/Spring%20IOC%E5%AE%B9%E5%99%A8/%E8%BF%90%E8%A1%8C%E6%97%A5%E5%BF%97.jpg)
 
+还有很多功能可以优化，比如：  
+
+- 支持用注解替代<bean>和<property> XML配置
+- 支持<context:component-scan> 扫描配置文件
+  
 ---
 
 致力于分享干货，为每一位计算机CS学子学习道路上带来帮助。
