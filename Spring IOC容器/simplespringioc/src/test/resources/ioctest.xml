@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="classB" class="com.summer.simplespringioc.test.ClassB">
+        <constructor-arg ref="classA"/>
+    </bean>
+
+    <bean id="classB2" class="com.summer.simplespringioc.test.ClassB">
+        <property name="fieldA1">
+            <ref bean="classA"></ref>
+        </property>
+    </bean>
+
+    <bean id="classA" class="com.summer.simplespringioc.test.ClassA">
+        <property name="field1" value="ssss" />
+        <property name="field2" value="5" />
+    </bean>
+</beans>
