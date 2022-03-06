@@ -10,7 +10,7 @@ websocket连接生命周期：
 ![聊天室实现](https://github.com/xiajunhust/tinywheel/blob/main/%E5%AE%9E%E7%8E%B0%E8%81%8A%E5%A4%A9%E5%AE%A4_%E5%9F%BA%E4%BA%8Ewebsocket/%E8%81%8A%E5%A4%A9%E5%AE%A4%E5%AE%9E%E7%8E%B0.png)
 
 运行日志：  
-![运行日志](hhttps://github.com/xiajunhust/tinywheel/blob/main/%E5%AE%9E%E7%8E%B0%E8%81%8A%E5%A4%A9%E5%AE%A4_%E5%9F%BA%E4%BA%8Ewebsocket/%E8%BF%90%E8%A1%8C%E6%97%A5%E5%BF%97.jpg)
+![运行日志](https://github.com/xiajunhust/tinywheel/blob/main/%E5%AE%9E%E7%8E%B0%E8%81%8A%E5%A4%A9%E5%AE%A4_%E5%9F%BA%E4%BA%8Ewebsocket/%E8%BF%90%E8%A1%8C%E6%97%A5%E5%BF%97.jpg)
 
 
 ---
