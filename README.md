@@ -1,5 +1,5 @@
-# tinywheel
-
+# tinywheel  
+## 手把手教你项目实战
 - 还在为没有项目经验而烦恼吗？  
 - 还在开发哪些烂大街的XXX管理系统吗？
 - 还在为看不懂动则数万行代码的开源项目而苦恼么？
@@ -17,6 +17,10 @@
 4. 基于Netty实现http server
 5. 基于netty websocket实现聊天工具
 6. 实现Spring IOC容器
+
+
+## **面试资料大合集（高频面试题、HR面试题、技术终面面试题、模拟面试服务）**  
+[面试资料面经](https://github.com/xiajunhust/tinywheel/tree/main/interv)
 
 ---
 
