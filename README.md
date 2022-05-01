@@ -8,7 +8,12 @@
 力求用最少的代码实现一个完整项目的核心功能，麻雀虽小五脏俱全。让大家通过学习源码更深刻理解Java、分布式基础知识，以及掌握项目的开发流程，积累项目经验。  
 
 
-内容包括**源码+PPT+视频讲解**「后两者即将推出」。  
+内容包括**源码+PPT+视频讲解**。
+
+ppt下载：
+链接：https://share.weiyun.com/pSVAiQZw   
+密码：关注公众号<b>「编程学习指南」</b>回复javappt获取。  
+![ppt内容](https://github.com/xiajunhust/tinywheel/blob/main/javappt.png)
 
 项目明细：  
 1. 利用原生Java nio实现cs通信程序
