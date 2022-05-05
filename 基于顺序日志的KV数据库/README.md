@@ -6,11 +6,11 @@
 
 - 存储引擎：基于顺序日志进行写入，每条执行命令的数据信息按行存在文本日志文件里。暂不支持类似hbase中的合并等复杂的逻辑。  
 
-![image.png](https://cdn.nlark.com/yuque/0/2022/png/640636/1651741930510-9bc226dd-3040-4d14-8718-650f46ed6a8d.png)
+![image.png](https://github.com/xiajunhust/tinywheel/blob/main/基于顺序日志的KV数据库/整体设计.png)
 
 # 代码模块
 
-![image.png](https://cdn.nlark.com/yuque/0/2022/png/640636/1651740751385-36cd396c-741d-4a3f-890e-3c2f2594ae63.png)
+![image.png](https://github.com/xiajunhust/tinywheel/blob/main/基于顺序日志的KV数据库/代码结构.png)
 
 # 性能分析
 
@@ -22,10 +22,62 @@
 
 测试比较简单，直接构建的实例，调用其查询、写入、删除方法即可。  
 
-![](/Users/xiajun/Library/Application%20Support/marktext/images/2022-05-05-17-16-27-image.png)
+```
+  import com.summer.simplekv.api.SimpleKvClient;
+  import com.summer.simplekv.core.LogBasedKV;
+  import lombok.extern.java.Log;
+  import org.springframework.boot.SpringApplication;
+  import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+  @Log
+  @SpringBootApplication
+  public class SimplekvApplication {
+
+      public static void main(String[] args) {
+          String logFileName = "simplekv.log";
+          SimpleKvClient kvClient = new LogBasedKV(logFileName);
+
+          //写入数据
+          for (int index = 0; index < 5; ++index) {
+              kvClient.put("k-" + index, "v-" + index);
+          }
+
+          //查询数据
+          for (int index = 0; index < 5; ++index) {
+              String value = kvClient.get("k-" + index);
+              log.info("get [" + "k-" + index + " value is [" + value + "]");
+          }
+
+          //删除一行数据
+          kvClient.del("k-" + 3);
+
+          log.info("after del 3");
+
+          //再次查询已被删除的数据
+          String value = kvClient.get("k-" + 3);
+          log.info("get [" + "k-" + 3 + " value is [" + value + "]");
+
+          SpringApplication.run(SimplekvApplication.class, args);
+      }
+  }
+  ```
+
 
 运行日志：
 
-
-
-![](/Users/xiajun/Library/Application%20Support/marktext/images/2022-05-05-17-16-38-image.png)
+```
+五月 05, 2022 4:59:56 下午 com.summer.simplekv.SimplekvApplication main
+信息: get [k-0 value is [v-0]
+五月 05, 2022 4:59:56 下午 com.summer.simplekv.SimplekvApplication main
+信息: get [k-1 value is [v-1]
+五月 05, 2022 4:59:56 下午 com.summer.simplekv.SimplekvApplication main
+信息: get [k-2 value is [v-2]
+五月 05, 2022 4:59:56 下午 com.summer.simplekv.SimplekvApplication main
+信息: get [k-3 value is [v-3]
+五月 05, 2022 4:59:56 下午 com.summer.simplekv.SimplekvApplication main
+信息: get [k-4 value is [v-4]
+五月 05, 2022 4:59:56 下午 com.summer.simplekv.SimplekvApplication main
+信息: after del 3
+五月 05, 2022 4:59:56 下午 com.summer.simplekv.SimplekvApplication main
+信息: get [k-3 value is [null]
+```
