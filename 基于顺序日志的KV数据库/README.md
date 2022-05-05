@@ -81,3 +81,14 @@
 五月 05, 2022 4:59:56 下午 com.summer.simplekv.SimplekvApplication main
 信息: get [k-3 value is [null]
 ```
+
+## **面试资料大合集（高频面试题、HR面试题、技术终面面试题、模拟面试服务）**  
+[面试资料面经](https://github.com/xiajunhust/tinywheel/tree/main/interv)
+
+---
+
+致力于分享干货，为每一位计算机CS学子学习道路上带来帮助。
+
+也欢迎大家关注我的公众号「编程学习指南」，***获取更多计算机干货~提供大厂（阿里、字节、美团、快手、网易等）内推、简历修改、面试咨询、毕设咨询等服务***。
+
+![欢迎大家关注我的公众号](https://github.com/xiajunhust/awosome-cs/blob/main/QR-CODE.jpg)
