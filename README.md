@@ -22,6 +22,7 @@ ppt下载：
 4. 基于Netty实现http server
 5. 基于netty websocket实现聊天工具
 6. 实现Spring IOC容器
+7. 基于顺序日志的KV数据库
 
 
 ## **面试资料大合集（高频面试题、HR面试题、技术终面面试题、模拟面试服务）**  
