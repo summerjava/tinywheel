@@ -86,28 +86,6 @@ public class DefaultDataSource extends AbstractDataSource implements IPooledData
                 exception.printStackTrace();
                 throw new SQLException("等待空闲连接异常");
             }
-
-            /**
-            //2.2 循环等待
-            final long startWaitMills = System.currentTimeMillis();
-            final long endWaitMills = startWaitMills + this.dataSourceConfig.getMaxWaitMills();
-            while (System.currentTimeMillis() < endWaitMills) {
-                Optional<IPooledConnection> optional = getFreeConnectionFromPool();
-                if(optional.isPresent()) {
-                    return optional.get();
-                }
-
-                try {
-                    Thread.sleep(this.dataSourceConfig.getMaxWaitMills());
-                } catch (Exception e) {
-                    log.warning("休眠失败");
-                }
-                log.info("等待连接池归还...");
-            }
-             **/
-
-            //2.3 等待超时
-            //throw new ConnPoolException("从连接池中获取失败，等待时间: " + this.dataSourceConfig.getMaxWaitMills());
         } else {
             //3. 扩容（暂时只扩容一个）
             log.info("开始扩容连接池大小...");
