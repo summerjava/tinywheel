@@ -38,6 +38,6 @@ ppt下载：
 
 致力于分享干货，为每一位计算机CS学子学习道路上带来帮助。
 
-也欢迎大家关注我的公众号「编程学习指南」，***获取更多计算机干货~提供大厂（阿里、字节、美团、快手、网易等）内推、项目辅导、简历修改、面试咨询、毕设咨询等1V1服务***。
+***也欢迎联系我获取更多计算机干货~提供大厂（阿里、字节、美团、快手、网易等）内推、项目辅导、简历修改、面试咨询、毕设咨询等1V1服务***。
 
-![欢迎大家关注我的公众号](https://github.com/xiajunhust/awosome-cs/blob/main/QR-CODE.jpg)
+![个人wx](https://github.com/summerjava/awosome-cs/blob/main/%E4%B8%AA%E4%BA%BA%E5%BE%AE%E4%BF%A1.jpg)
