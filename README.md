@@ -41,3 +41,13 @@ ppt下载：
 ***也欢迎联系我获取更多计算机干货~提供大厂（阿里、字节、美团、快手、网易等）内推、项目辅导、简历修改、面试咨询、毕设咨询等1V1服务***。
 
 ![个人wx](https://github.com/summerjava/awosome-cs/blob/main/%E4%B8%AA%E4%BA%BA%E5%BE%AE%E4%BF%A1.jpg)
+
+## Star History
+
+<a href="https://star-history.com/#summerjava/tinywheel&Date">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=summerjava/tinywheel&type=Date&theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=summerjava/tinywheel&type=Date" />
+    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=summerjava/tinywheel&type=Date" />
+  </picture>
+</a>
